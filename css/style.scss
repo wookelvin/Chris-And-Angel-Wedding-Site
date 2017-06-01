@@ -1,0 +1,328 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600|Dancing+Script);
+
+$color1: #E89BA5;
+$color2: #FBE5E5;
+$color3: #D7415D;
+body{
+ margin:0; 
+  font-family:"Open Sans";
+  font-weight:400;
+  letter-spacing:1px;
+  text-transform: uppercase;
+  font-size:0.8em;
+}
+p{
+  margin:0.1em; 
+}
+
+.fullwidth-container{
+  width:100%; 
+  position:relative;
+}
+
+.full-page{
+  height:100vh;
+  min-height:40vw;
+}
+.blackcover{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:rgba(0,0,0,0.28);
+  z-index:1;
+}
+.first{
+  background-image:url(../img/img2.jpg);
+  background-size:cover;
+  background-position: center center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.frontlogo{
+  z-index:2; 
+}
+.page-separate{
+  height:1em;
+  background-color:$color1; 
+  z-index:1;
+}
+
+.floral{
+  background-image:url(../img/pattern.jpg);
+  background-size:32em 32em;
+  padding-bottom:5em;
+}
+.ribbon{
+  height:5em;
+  width:8em;
+  background: #D8D8D8;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+  margin:0 auto;
+  z-index:0;
+  position:relative;
+}
+.card{
+  width:80%;
+  max-width:1000px;
+  padding:13em 2em;
+  border:1em solid white;
+  margin:0 auto;
+  
+  text-align:center;
+  
+  z-index:2;
+  position:relative;
+  box-sizing: border-box;
+  box-shadow:0 0 30px rgba(0,0,0,0.4);
+}
+.imgblock{
+  display:block;
+  margin: 0 auto;
+}
+.cardemphasis{
+  border-top:1px solid #888;
+  border-bottom:1px solid #888;
+  display:inline-block;
+  margin:2em 0;
+  padding:1.5em 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size:1.5em;
+}
+.btn1{
+  text-decoration:none;
+  color:#888;
+  letter-spacing: 4px;
+  font-weight:600;
+  padding:1em 2em;
+  display:inline-block;
+  background-color:#F3C3C6;
+  margin: 2em 0 0;
+  transition:all 0.2s ease;
+  border:0;
+  text-transform: uppercase;
+  &:hover{
+    background-color:#D7415D;
+    
+    color:white;
+    transform:scale(1.15);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  }
+}
+.card-invite{
+  background-color:$color1; 
+  color:white;
+  padding:13em 2em;
+}
+.card-ceremony{
+  background-color:$color2;  
+  color:#888;
+  padding:6em 2em;
+}
+.card-reception{
+  background-color:$color2; 
+  color:#888;
+  padding:6em 15em;
+  
+}
+
+.break{
+  height:2em; 
+}
+.important{
+  color:#D7415D;
+}
+.card-rsvp{
+  background-color:$color2;
+  color:#888;
+  padding:6em 5em;
+  
+}
+
+//form
+.formgroup{
+  width:300px;
+  margin: 0 auto;
+}
+#name, #address, #name1, #name2, #name3, #name4, #name5, #name6, #name7{
+  outline:none;
+  background-color:transparent;
+  border:0;
+  border-bottom:1px solid #888;
+  width:100%;
+  text-align:center;
+  font-size:2em;
+  margin-top:0.5em;
+  color:#CE9C00;
+  font-family:"Dancing Script", "Open Sans";
+  &:focus{
+    border-bottom:1px solid $color3;
+  }
+}
+
+#name + label.underlabel,
+#address + label.underlabel,
+#name1 + label.underlabel,
+#name2 + label.underlabel,
+#name3 + label.underlabel,
+#name4 + label.underlabel,
+#name5 + label.underlabel,
+#name6 + label.underlabel,
+#name7 + label.underlabel,
+{
+  display:block; 
+  font-size:0.7em;
+}
+
+textarea{
+  display:block;
+  margin:0 auto;
+  width:300px;
+  height:100px;
+  font-size:1.5em;
+  color:#CE9C00;
+  font-family:"Dancing Script", "Open Sans";
+  background-color:transparent;
+  border: 1px solid #888;
+  &:focus{
+    outline:none;
+    border: 1px solid $color3;
+  }
+}
+
+select{
+  width:100%;
+  appearance:none;
+  border-radius:0;
+  font-family:"Open Sans";
+  padding:0.25em 0.5em;
+  font-size:1em;
+  border:1px solid transparent;
+  color:#888;
+}
+select:focus{
+  outline:none;
+  border:1px solid $color3;
+}
+.selectgroup{
+  position:relative;
+  width:300px;
+  margin: 0 auto;
+  
+  
+}
+.selectgroup:after{
+  content:"";
+  position:absolute;
+  width:0;
+  height:0;
+  right:1em;
+  top:40%;
+  border-top:5px solid $color3;
+  border-left:5px solid transparent;
+  border-right:5px solid transparent;
+  border-bottom:5px solid transparent;
+  z-index:5;
+}
+
+.veglabel{
+  font-size:0.6em; 
+}
+.guestcol1{
+  width:70%; 
+}
+.guestcol2{
+  width:30%; 
+}
+.guest{
+  display:flex; 
+  width:300px;
+  margin: 0 auto;
+  align-items:center;
+}
+
+.blankcover{
+  height: 50vh;
+  background-color:#F6F9F6;
+  margin-top:-50vh;
+}
+.blank{
+  background-color:#F6F9F6; 
+  color:#bbb;
+  text-align: center;
+  a{
+    color:#bbb; 
+    background-color:#bbb;
+    color:#fff;
+    text-decoration:none;
+    border:1px solid #bbb;
+    padding:0.25em 1em;
+    &:hover{
+      background-color:transparent;
+      color:#bbb;
+    }
+  }
+  padding-bottom:5em;
+  padding-top:5em;
+  font-size:1em;
+}
+  
+
+.error{
+  color:white;
+  background-color:$color3;
+  
+}
+
+//animations
+
+.scrollreveal{
+  opacity:0; 
+}
+@keyframes fade{
+  from{ opacity:0;}
+  to {opacity:1;}
+}
+.fadein{
+  opacity:0;
+  animation-name:fade;
+  animation-duration:2s;
+  animation-delay:2s;
+  animation-fill-mode:forwards;
+}
+
+@media screen and (max-width:480px){
+  img{
+    max-width:250px;    
+  }
+  .card{
+    width:95%; 
+  }
+ 
+  .card-invite{
+  
+  padding:3em 1em;
+}
+.card-ceremony{
+  
+  padding:3em 1em;
+}
+.card-reception{
+  padding:3em 1em;
+  
+}
+.card-rsvp{
+  padding:3em 1em;
+  }
+.cardemphasis{
+    width:250px;
+  }
+  .formgroup, .selectgroup, textarea, .guest{
+    
+    width:250px; 
+  }
+}

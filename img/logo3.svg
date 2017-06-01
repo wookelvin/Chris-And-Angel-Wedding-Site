@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="391px" height="99px" viewBox="0 0 391 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M420.899783,896.814588 C420.899783,896.814588 421.631933,893.712845 419.553551,890.791502 C417.475169,887.870158 415.694923,885.152629 418.297353,883.554102 C420.899783,881.955574 423.515624,884.696519 423.515624,884.696519 C423.515624,884.696519 425.560807,881.251787 428.489077,882.149166 C431.417347,883.046544 431.106678,886.602618 428.489077,889.426406 C425.871476,892.250195 420.899783,896.814588 420.899783,896.814588 Z"></path>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-5" sketch:type="MSArtboardGroup" transform="translate(-307.000000, -878.000000)">
+            <g id="Path-38">
+                <use stroke="#FF5959" fill="#FFFFFF" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <use stroke="#FFDAD4" fill="none" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

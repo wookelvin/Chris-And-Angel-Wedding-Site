@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chris And Angel</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="icon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="icon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="icon/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="icon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="icon/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="&amp;nbsp;">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="icon/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="icon/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="icon/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="icon/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="icon/mstile-310x310.png">
+    <link href="css/animsition.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="animsition">
+      <div class="fullwidth-container full-page first">
+        <div class="blackcover"></div>
+        <div class="frontlogo fadein"><img src="img/title.svg"></div>
+      </div>
+      <div class="fullwidth-container page-separate"></div>
+      <div class="fullwidth-container floral">
+        <div class="ribbon scrollreveal"></div>
+        <div class="card card-invite scrollreveal"><img src="img/invite.svg" class="imgblock">
+          <div class="break"></div>
+          <p>Believing the Holy Matrimony is ordained by God and in the Spirit of Christian Joy </p>
+          <div class="cardemphasis">Angel Juan<br>&amp;<br>Christopher Chung</div>
+          <p>request the honour of your presence when they vow their lives to each other and become united as one in Christ</p>
+          <p>on Saturday June 18th, 2016 </p>
+          <p>in Toronto, Ontario, Canada</p>
+        </div>
+        <div class="ribbon scrollreveal"></div>
+        <div class="card card-ceremony scrollreveal"><img src="img/ceremony.svg" class="imgblock">
+          <div class="break"></div>
+          <p>will be held at</p>
+          <div class="cardemphasis">Tyndale Chapel</div>
+          <p>at two o'clock in the afternoon</p>
+          <p>located at 3373 Bayview Avenue, Toronto Ontario, M2M 3S4</p><a href="https://goo.gl/maps/YTmAf37xHCy" target="_blank" class="btn1">See Map</a>
+        </div>
+        <div class="ribbon scrollreveal"></div>
+        <div class="card card-reception scrollreveal"><img src="img/reception.svg" class="imgblock">
+          <p>will be held at</p>
+          <div class="cardemphasis">Hilton Markham Suites</div>
+          <p>Cocktails at 5:00pm</p>
+          <p>Dinner at 6:00pm</p>
+          <p>located at 8500 Warden Avenue, Markham Ontario, L6G 1A5</p>
+          <div class="break"></div>
+          <p class="important">IMPORTANT: Please ensure you print the parking permit below and place in the dashboard of your vehicle when parking at the hotel</p>
+          <p><a href="https://goo.gl/maps/ZY3rgVU1wHw" target="_blank" class="btn1">See Map</a></p>
+          <p><a href="download/Juan-Chungs-Wedding-Parking-Voucher.pdf" target="_blank" class="btn1">Print Parking Permit</a></p>
+        </div>
+        <div class="ribbon scrollreveal"></div>
+        <div class="card card-rsvp scrollreveal"><img src="img/rsvp.svg" class="imgblock">
+          <div class="break"></div>
+          <p>Please RSVP by May 10th, 2016.</p>
+          <p>Thank you for taking the time to respond. </p>
+          <p>All is welcomed to the ceremony.</p>
+          <div class="break"></div>
+          <form id="theForm" method="post" action="mail_handler.php">
+            <div class="formgroup">
+              <input id="name" type="text" name="name" class="required">
+              <label for="name" class="underlabel">Your Full Name</label>
+            </div>
+            <div class="formgroup">
+              <input id="address" type="email" name="address" class="email required">
+              <label for="address" class="underlabel">Your Email </label>
+            </div>
+            <div class="break"></div>
+            <div class="formgroup">
+              <label for="yesno">Will You Be Attending the reception?</label>
+              <div class="selectgroup">
+                <select id="yesno" name="yesno" class="required">
+                  <option value="">Choose... </option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+            </div>
+            <div id="numguests" class="formgroup">
+              <div class="break"></div>
+              <label for="guest" name="guests">How many extra guests will you bring with you?</label>
+              <div class="selectgroup">
+                <select id="guest" name="guest" class="required ignore">
+                  <option value="">Choose... </option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+            </div>
+            <div id="group1" class="formgroup guest">
+              <div class="break"></div>
+              <div class="guestcol1">
+                <input id="name1" type="text" name="name1" class="required ignore">
+                <label for="name1" class="underlabel">Guest #1 Full Name</label>
+              </div>
+              <div class="guestcol2">
+                <input id="veg1" type="checkbox" name="veg1">
+                <label for="veg1" class="veglabel">Vegetarian </label>
+              </div>
+            </div>
+            <div id="group2" class="formgroup guest">
+              <div class="guestcol1">
+                <input id="name2" type="text" name="name2" class="required ignore">
+                <label for="name2" class="underlabel">Guest #2 Full Name</label>
+              </div>
+              <div class="guestcol2">
+                <input id="veg2" type="checkbox" name="veg2">
+                <label for="veg2" class="veglabel">Vegetarian </label>
+              </div>
+            </div>
+            <div id="group3" class="formgroup guest">
+              <div class="guestcol1">
+                <input id="name3" type="text" name="name3" class="required ignore">
+                <label for="name3" class="underlabel">Guest #3 Full Name</label>
+              </div>
+              <div class="guestcol2">
+                <input id="veg3" type="checkbox" name="veg3">
+                <label for="veg3" class="veglabel">Vegetarian </label>
+              </div>
+            </div>
+            <div id="group4" class="formgroup guest">
+              <div class="guestcol1">
+                <input id="name4" type="text" name="name4" class="required ignore">
+                <label for="name4" class="underlabel">Guest #4 Full Name</label>
+              </div>
+              <div class="guestcol2">
+                <input id="veg4" type="checkbox" name="veg4">
+                <label for="veg4" class="veglabel">Vegetarian </label>
+              </div>
+            </div>
+            <div id="group5" class="formgroup guest">
+              <div class="guestcol1">
+                <input id="name5" type="text" name="name5" class="required ignore">
+                <label for="name5" class="underlabel">Guest #5 Full Name</label>
+              </div>
+              <div class="guestcol2">
+                <input id="veg5" type="checkbox" name="veg5">
+                <label for="veg5" class="veglabel">Vegetarian </label>
+              </div>
+            </div>
+            <div id="group6" class="formgroup guest">
+              <div class="guestcol1">
+                <input id="name6" type="text" name="name6" class="required ignore">
+                <label for="name6" class="underlabel">Guest #6 Full Name</label>
+              </div>
+              <div class="guestcol2">
+                <input id="veg6" type="checkbox" name="veg6">
+                <label for="veg6" class="veglabel">Vegetarian </label>
+              </div>
+            </div>
+            <div id="group7" class="formgroup guest">
+              <div class="guestcol1">
+                <input id="name7" type="text" name="name7" class="required ignore">
+                <label for="name7" class="underlabel">Guest #7 Full Name</label>
+              </div>
+              <div class="guestcol2">
+                <input id="veg7" type="checkbox" name="veg7">
+                <label for="veg7" class="veglabel">Vegetarian </label>
+              </div>
+            </div>
+            <div id="aller" class="formgroup">
+              <div class="break"></div>
+              <label for="msg">List any food allergies with corresponding guest name below:  </label>
+              <textarea id="allergies" name="allergies"></textarea>
+            </div>
+            <div class="formgroup">
+              <div class="break"></div>
+              <label for="msg">Leave a message for<br>Angel &amp; Christopher:</label>
+              <textarea id="msg" name="msg"></textarea>
+            </div>
+            <div class="formgroup">
+              <button type="submit" class="btn1">Submit</button>
+            </div>
+          </form>
+          <div class="break"></div>
+          <p>Your presence at our wedding is already an incredible gift to us. But if you are planning on giving, a cash gift to help start our lives together would be greatly appreicated.</p>
+        </div>
+      </div>
+      <!--.fullwidth-container.blankcover-->
+      <div class="fullwidth-container blank">
+        <p>WEBSITE DESIGNED BY <a href="http://www.wookiestudios.com" target="_blank">WOOKIES STUDIOS </a></p>
+      </div>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
